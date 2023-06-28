@@ -8,13 +8,13 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: 'scripts/bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
     },
     resolve: {
         extensions: ['.js', '.json', '.ts', '.tsx'],
     },
     plugins: [
-        new CleanWebpackPlugin(['dist']),
+        new CleanWebpackPlugin(['build']),
         new HtmlWebpackPlugin({ template: path.join(__dirname, 'src', 'index.html') }),
         new CopyWebpackPlugin([{ from: './src/favicon.ico', to: 'favicon.ico' }])
     ],

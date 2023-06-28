@@ -31,7 +31,7 @@ class EmbeddedNewReport extends React.Component<EmbeddedNewReportPropertiesWithR
         <div className="message-body" >
           clique na fonte ao lado para criar um relatório<br/>
 
-          <p style={{color:'red'}}>Atenção! Seção avançada: A manipulação dos dados requer habilidades no Power BI. Tome cuidado para evitar problemas de visualização.</p>
+          <p style={{color:'red'}}>Aviso importante: Seção avançada. A manipulação de dados nesta área exige conhecimento especializado em Power BI. Recomenda-se extrema cautela ao realizar alterações para evitar possíveis complicações na visualização dos resultados.</p>
         </div>);
     }
     if (badDatasetId) {
